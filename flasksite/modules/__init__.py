@@ -48,7 +48,6 @@ def GetInformation(username):
 		sql = """ select * from services where username='"""+username+"""';"""
 		rows = db_connect.cursor.execute(sql)
 		results = db_connect.cursor.fetchall()
-		print results[0]
 		db_connect.db.commit()
 
 		
